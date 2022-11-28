@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url("BravePointlessBoilweevil-size_restricted.gif");
+    
+}
+.navbar-style{
+    box-shadow: 0 5px 10px #f8f4f4;
+    text-transform: uppercase;
+    
+}
+.logo{
+    height: 70px;
+    width: 70px;
+    padding: 7px 10px;
+}
+.icon-bar{
+    background: #0a0909;
+}
+li a{
+    color: orange;
+}
+.big-text{
+    font-size: 52px;
+    margin: 20px;
+    color: darkorange;
+}
+.btn-btn-first{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+a.btn-btn-first{
+    background-color: rgb(248, 243, 243);
+    color: rgb(6, 132, 243);
+}
+.btn-second{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px; 
+
+}
+
+a.btn:hover{
+    background: darkorange;
+    border: none;
+    color: #fff;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+ul li.active a {
+    background-color: rgb(125, 242, 8);
+    color: black;
+  }
+  .para{
+font-size: 20px;
+color: rgb(253, 250, 250);
+  }

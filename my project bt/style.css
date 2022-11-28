@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "Archivo";
+    src: url("/resources/fonts/Archivo-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Archivo";
+    src: url("/resources/fonts/Archivo-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/resources/fonts/OpenSans-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    box-shadow: 2px pink;
+}
+.form-group{
+    color: #000;
+    background-image: url("maxresdefault.jpg");
+}
+.verry{
+    position: relative;
+    background-image: url("maxresdefault.jpg");
+}
+.jerry{
+    width: 600px;
+    background-image: url("maxresdefault.jpg");
+}
+.love{
+    background-image: url("oo.jpg");
+    color: rgb(13, 20, 231);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container-fluid{
+    color: rgb(21, 21, 21);
+    font-size: 25px;
+    box-shadow: 1px pink;
+}
+body {
+    height: 100%;
+    background-color: darkorange;
+    background-image: linear-gradient(to right, #eb9898, #6fddc7)url("maxresdefault.jpg");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
+    background-color: #6fddc7;
+}
+.rounded-circle{
+    position: fixed;
+    opacity: 0.5;
+}
+h1 {
+     font-size: 40px;
+     color:#ff0000;
+    margin-left: 1%;
+}
+.btn{color: white;}
+
+/* <h3> element in the left column for user's location */
+h3 {
+	color: #a2a9af;
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+.btn-group{
+    display: contents;
+}
+h2 {
+    margin-top: 30px;
+}
+
+/* <h2> heading for "WHO AM I?" */
+h2#biography-heading {
+    margin-top: 0;
+}
+
+/* <h2> heading for "FAVOURITES IDENTIFIED" */
+h2#favourites-heading {
+    margin-top: 50px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    list-style-position: outside;
+    font-family: "Archivo", sans-serif;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+}
+
+li {
+    font-size: 18px;
+    line-height: 2.2;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+span {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+}
+
+/* <div> element that contains the profile image */
+div.profile-img-container {
+    overflow: hidden;
+	width: 200px;
+	 height: 200px;
+	  border-radius: 50%;
+	margin: 0 auto;
+}
+
+/* profile image */
+div.profile-img-container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* <h2> element in the left column for user's name */
+div.info-container h2 {
+    text-align: center;
+    color: white;
+}
+
+/* pseudo-element to add the location pin icon */
+h3#location::before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
+    color: #000;
+    content: "\f3c5";
+}
+
+/* <div> that wraps around both the left and right columns */
+div.flex-wrapper {
+    display: flex;
+}
+
+/* styling for both the left and right colunmns */
+div.flex-item {
+    background-color: rgb(210, 252, 201);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 3% 3% 3%;
+    margin: 10px;
+    width: 200px;
+}
+
+/* <div> for the left column that contains the user's profile image */
+div.left-col {
+    flex-grow: 2;
+    text-align: center;
+}
+
+/* <div> for the right column that contains the "Who am I?" blurb and image gallery */
+div.right-col {
+    flex-grow: 3;
+}
+
+/* <div> element that wraps around the entire image gallery */
+div.gallery-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* <div> element that wraps each individual gallery image */
+div.gallery-item {
+    width: 32%;
+    text-align: center;
+}
+
+/* images in the "Favourites" section */
+.gallery-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+}
+
+/* responsive layout for mobile view */
+@media (max-width: 575.98px) {
+    div.flex-wrapper {
+        flex-direction: column;
+    }
+    div.flex-item {
+        padding: 7%;
+    }
+    div.gallery-wrapper {
+        justify-content: center;
+    }
+    div.gallery-item {
+        width: 100%;
+        margin: 5px;
+    }
+    .gallery-item > img {
+        height: auto;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    ul {
+        text-align: center;
+    }
+}     
+ul li.active a {
+    background-color: rgb(125, 242, 8);
+    color: black;}
+
+    .info-container{
+        background-image: url("bhutan.gif");
+    }
+  .loogoo{
+    box-shadow: 1px 1px 3px 4px yellow;
+    border-radius: 50%;
+    animation-name: siva ;
+    animation-duration: 10s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes siva {
+    from{ transform: translateX(3vw);}
+    to{ transform: translateX(60vw);}
+}
